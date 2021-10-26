@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	font-family: 'Poppins', sans-serif;
+}
+
+/* custom scroll bar */
+
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	/* box-shadow: inset 0 0 5px grey; */
+	background: transparent;
+	box-shadow: none;
+	/* border-radius: 10px; */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgb(177, 177, 177);
+	/* background: none; */
+	border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #979797;
+}
+
+body {
+	background-color: #efefef;
+}
+
+.gradient-text {
+	background-image: linear-gradient(
+		to bottom right,
+		#f27ef2,
+		#7d2fcc
+	) !important;
+	background-size: 100%;
+	background-repeat: repeat;
+	background-clip: text !important;
+
+	-webkit-background-clip: text !important;
+	-webkit-text-fill-color: transparent !important;
+}
+.header {
+	/* background-color: red;
+      height: 100px;
+      width: 100%; */
+	/* position: fixed; */
+	position: fixed;
+	width: 100%;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffff;
+}
+
+.header div {
+	display: flex;
+}
+.header div:last-child {
+	margin-right: 40px;
+}
+
+.header a {
+	margin: 0 20px;
+	text-decoration: none;
+	color: rgb(0, 183, 255);
+}
+.logo {
+	margin: 0 10px;
+}
+.header h3 {
+	/* font-size: 15px; */
+	font-weight: normal;
+}
+
+/* ! Gallery */
+.gallery {
+	padding: 50px 0 0 0;
+}
+.gallery__row {
+	display: flex;
+	justify-content: space-evenly;
+}
+.gallery__row h3 {
+	font-weight: 600;
+}
+.gallery__img-container {
+	width: 40%;
+	margin: 30px 20px;
+}
+.gallery img {
+	width: 100%;
+	height: auto;
+}
+.gallery h3 {
+	text-align: center;
+}
+
+/* ! Overview */
+.overview {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.overview h2 {
+	text-align: center;
+}
+
+.overview p {
+	font-size: 18px;
+	line-height: 5ch;
+}
+.overview > p {
+	text-align: left;
+	line-height: 1ch;
+}
+
+/* ! Teams */
+.team {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.el {
+	padding: 2px 20px;
+}
+table,
+.row,
+.el {
+	border: 1px solid #000;
+}
+.el h4 {
+	font-weight: 400;
+}
+.el h3 {
+	font-weight: 600;
+}
+table {
+	margin: 20px 0;
+}
+.work h4 {
+	font-weight: 600;
+}
